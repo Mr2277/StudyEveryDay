@@ -16,6 +16,7 @@ public class ABC_lock {
                         System.out.print("A");
                         state++;
                         i++;
+
                     }
                 } finally {
                     lock.unlock();// unlock()操作必须放在finally块中
