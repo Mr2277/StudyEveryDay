@@ -4,7 +4,9 @@ import java.util.Date;
 class A implements Runnable{
 
     public void run() {
-        System.out.println(new Date());
+        while(true) {
+            System.out.println(new Date());
+        }
     }
 }
 public class SimpleJavaApp {
@@ -16,8 +18,11 @@ public class SimpleJavaApp {
         }
         */
         A a=new A();
+        A a1=new A();
         Thread thread=new Thread(a);
+        Thread thread1=new Thread(a1);
         thread.start();
+        thread1.start();
         a.run();
     }
 }
