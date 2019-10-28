@@ -50,7 +50,6 @@ public class testjoin1026 {
          System.out.println(threadB.isInterrupted());
          threadB.interrupt();
          System.out.println(threadB.isInterrupted());
-
         System.out.println(System.currentTimeMillis()+"main");
     }
 }
