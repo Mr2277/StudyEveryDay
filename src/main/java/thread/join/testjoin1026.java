@@ -51,8 +51,6 @@ public class testjoin1026 {
          threadB.interrupt();
          System.out.println(threadB.isInterrupted());
 
-        //threadA.start();
-        //threadB.join();
         System.out.println(System.currentTimeMillis()+"main");
     }
 }
