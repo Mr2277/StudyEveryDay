@@ -1,7 +1,4 @@
-package thread;
-
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+package thread.unkown;
 
 class A1011 implements Runnable {
     private String name;
@@ -55,5 +52,9 @@ public class SerThread {
         //Thread.sleep(10);
         new Thread(pc).start();
         //Thread.sleep(10);
+        String beizhu="";
+        beizhu.equals("字段错误");
+        String E_EID="";
+        String EID[]=E_EID.split(",");
     }
 }
