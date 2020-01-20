@@ -8,26 +8,26 @@ public class HuaWei4 {
         while(sc.hasNext()){
             String num = sc.nextLine();
             num=num.replace("0x","");
-            System.out.println(num);
-            System.out.println(num.length());
             int sum=0;
             for(int i=0;i<num.length();i++){
                 char ch=num.charAt(i);
                 if('0' <= ch && ch<='9' ){
-                    sum+=Math.pow(ch,num.length()-i);
+                    int number=Integer.parseInt(String.valueOf(ch));
+                   // System.out.println(number);
+                    sum+=number*(Math.pow(16,num.length()-i-1));
                 }
                 switch (ch){
-                    case 'A': sum+=Math.pow(10,num.length()-i);
+                    case 'A': sum+=10*(Math.pow(16,num.length()-i-1));
                         break;
-                    case 'B': sum+=Math.pow(11,num.length()-i);
+                    case 'B': sum+=11*(Math.pow(16,num.length()-i-1));
                         break;
-                    case 'C': sum+=Math.pow(12,num.length()-i);
+                    case 'C': sum+=12*(Math.pow(16,num.length()-i-1));
                         break;
-                    case 'D': sum+=Math.pow(13,num.length()-i);
+                    case 'D': sum+=13*(Math.pow(16,num.length()-i-1));
                         break;
-                    case 'E': sum+=Math.pow(14,num.length()-i);
+                    case 'E': sum+=14*(Math.pow(16,num.length()-i-1));
                         break;
-                    case 'F': sum+=Math.pow(15,num.length()-i);
+                    case 'F': sum+=15*(Math.pow(16,num.length()-i-1));
                         break;
                 }
             }
