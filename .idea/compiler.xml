@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
+        <module name="genator" />
         <module name="StudyEveryDay" />
         <module name="swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="genator" target="1.8" />
       <module name="StudyEveryDay" target="8" />
       <module name="swagger" target="1.8" />
     </bytecodeTargetLevel>
@@ -20,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="genator" options="-parameters" />
       <module name="swagger" options="-parameters" />
     </option>
   </component>
