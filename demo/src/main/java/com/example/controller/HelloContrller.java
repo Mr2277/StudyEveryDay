@@ -21,4 +21,8 @@ public class HelloContrller {
         int c=a+b;
         return c;
     }
+    @RequestMapping("/test")
+    public String test(){
+        return "test";
+    }
 }
