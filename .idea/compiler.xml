@@ -7,27 +7,39 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
+        <module name="eurekaservice" />
         <module name="first" />
         <module name="genator" />
+        <module name="order" />
+        <module name="pay" />
+        <module name="rocketmq" />
         <module name="security" />
-        <module name="StudyEveryDay" />
         <module name="swagger" />
+        <module name="ymm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="eurekaservice" target="1.8" />
       <module name="first" target="1.8" />
       <module name="genator" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="pay" target="1.8" />
+      <module name="rocketmq" target="8" />
       <module name="security" target="1.8" />
       <module name="StudyEveryDay" target="8" />
       <module name="swagger" target="1.8" />
+      <module name="ymm" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="eurekaservice" options="-parameters" />
       <module name="first" options="-parameters" />
       <module name="genator" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="pay" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="swagger" options="-parameters" />
     </option>
