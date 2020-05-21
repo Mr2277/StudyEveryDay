@@ -1,25 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+class AA{
+    private Integer integer =0;
 
+}
 public class FirstLesson {
-    public static void main(String[] args){
-        int m=4;
-        int n=4;
-        char map[][]=new char[4][4];
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(i == 0 || i == m-1){
-                   map[i][j]='*';
-                }
-                if(j == 0 || j == n-1){
-                    map[i][j]='*';
-                }
-            }
+    public static void main(String[] args) throws InterruptedException {
+        //Byte b=new Byte((byte) ((byte) 1));
+        //List<Byte> list=new ArrayList<>();
+        List<AA>list=new ArrayList<>();
+        while(true){
+            for(int i=0;i<50000000;i++)
+            list.add(new AA());
+            list=null;
+            Thread.sleep(1000000000);
         }
-       for(int i=0;i<m;i++){
-           for(int j=0;j<n;j++){
-               System.out.print(map[i][j]+" ");
-           }
-           System.out.println();
-       }
+
+
     }
 }

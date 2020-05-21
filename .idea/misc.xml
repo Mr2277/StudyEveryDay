@@ -14,10 +14,10 @@
         <option value="$PROJECT_DIR$/swagger/pom.xml" />
         <option value="$PROJECT_DIR$/genator/pom.xml" />
         <option value="$PROJECT_DIR$/security/pom.xml" />
-        <option value="$PROJECT_DIR$/first/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaservice/pom.xml" />
         <option value="$PROJECT_DIR$/order/pom.xml" />
         <option value="$PROJECT_DIR$/pay/pom.xml" />
+        <option value="$PROJECT_DIR$/logistics/pom.xml" />
       </list>
     </option>
   </component>
