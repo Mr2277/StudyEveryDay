@@ -18,7 +18,7 @@
   } ],
   "pkColumn" : null,
   "otherColumn" : null,
-  "savePackageName" : "com.pay.client",
-  "savePath" : "./pay/src/main/java/com/pay/client",
-  "saveModelName" : "pay"
+  "savePackageName" : "com.order.server",
+  "savePath" : "./order/src/main/java/com/order/server",
+  "saveModelName" : "order"
 }
