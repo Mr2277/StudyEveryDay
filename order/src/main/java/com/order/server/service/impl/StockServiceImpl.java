@@ -78,17 +78,17 @@ public class StockServiceImpl implements StockService {
      * @return 实例对象
      */
     @Override
-    //@Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class)
     public boolean update(Stock stock) {
            this.stockDao.update(stock);
            // TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();//如果updata2()抛了异常,updata()会回滚,不影响事物正常执行
 
         if(stock.getNum().equals(queryById(stock).getNum())){
+            //throw new RuntimeException("扣减库存异常");
             return true;
         }
         else{
-            //throw new RuntimeException("ku")
-            return false;
+            throw new RuntimeException("扣减库存异常");
         }
 
     }
@@ -103,15 +103,6 @@ public class StockServiceImpl implements StockService {
     public boolean deleteById(Integer id) {
         return this.stockDao.deleteById(id) > 0;
     }
-    @Transactional(rollbackFor = Exception.class)
-    public boolean order(Stock stock) throws Exception {
-        if(stock == null || stock.getNum() <= 0){
-            return false;
-        }
-        else{
-            stock.setNum(stock.getNum()-1);
-            update(stock);
-            throw new Exception("添加失败，名字已存在");//自定义异常  继承Exception
-        }
-    }
+
+
 }

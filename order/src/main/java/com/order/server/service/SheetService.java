@@ -1,15 +1,16 @@
 package com.order.server.service;
 
-import com.order.server.entity.Stock;
+import com.order.server.entity.Sheet;
+
 import java.util.List;
 
 /**
- * (Stock)表服务接口
+ * (Sheet)表服务接口
  *
  * @author makejava
- * @since 2020-05-21 21:44:59
+ * @since 2020-05-22 16:00:22
  */
-public interface StockService {
+public interface SheetService {
 
     /**
      * 通过ID查询单条数据
@@ -17,7 +18,7 @@ public interface StockService {
      * @param id 主键
      * @return 实例对象
      */
-    Stock queryById(Integer id);
+    Sheet queryById(Integer id);
 
     /**
      * 查询多条数据
@@ -26,23 +27,23 @@ public interface StockService {
      * @param limit 查询条数
      * @return 对象列表
      */
-    List<Stock> queryAllByLimit(int offset, int limit);
+    List<Sheet> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param stock 实例对象
+     * @param sheet 实例对象
      * @return 实例对象
      */
-    Stock insert(Stock stock);
+    Sheet insert(Sheet sheet);
 
     /**
      * 修改数据
      *
-     * @param stock 实例对象
+     * @param sheet 实例对象
      * @return 实例对象
      */
-    boolean update(Stock stock);
+    Sheet update(Sheet sheet);
 
     /**
      * 通过主键删除数据
@@ -51,4 +52,5 @@ public interface StockService {
      * @return 是否成功
      */
     boolean deleteById(Integer id);
+
 }
