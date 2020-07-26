@@ -18,7 +18,7 @@ public class Consumer {
         // Specify name server addresses.
         consumer.setNamesrvAddr("127.0.0.1:9876");
         // Subscribe one more more topics to consume.
-        consumer.subscribe("TopicTest", "*");
+        consumer.subscribe("pay_test_topic", "*");
         // Register callback to execute on arrival of messages fetched from brokers.
         consumer.registerMessageListener(new MessageListenerConcurrently() {
 

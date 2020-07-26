@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/StudyEveryDay.iml" filepath="$PROJECT_DIR$/StudyEveryDay.iml" />
       <module fileurl="file://$PROJECT_DIR$/logistics/client (1) (com.logistics).iml" filepath="$PROJECT_DIR$/logistics/client (1) (com.logistics).iml" />
       <module fileurl="file://$PROJECT_DIR$/pay/client (2) (com.pay).iml" filepath="$PROJECT_DIR$/pay/client (2) (com.pay).iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo (1) (com.example).iml" filepath="$PROJECT_DIR$/demo/demo (1) (com.example).iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaservice/demo (2) (com.eureka.server).iml" filepath="$PROJECT_DIR$/eurekaservice/demo (2) (com.eureka.server).iml" />
       <module fileurl="file://$PROJECT_DIR$/genator/genator.iml" filepath="$PROJECT_DIR$/genator/genator.iml" />
