@@ -19,6 +19,7 @@
         <module name="pay" />
         <module name="producer" />
         <module name="rocketmq" />
+        <module name="scheduled" />
         <module name="security" />
         <module name="server" />
         <module name="swagger" />
@@ -40,6 +41,7 @@
       <module name="pay" target="1.8" />
       <module name="producer" target="1.8" />
       <module name="rocketmq" target="8" />
+      <module name="scheduled" target="1.8" />
       <module name="security" target="1.8" />
       <module name="server" target="1.8" />
       <module name="StudyEveryDay" target="8" />
@@ -62,6 +64,7 @@
       <module name="order" options="-parameters" />
       <module name="pay" options="-parameters" />
       <module name="producer" options="-parameters" />
+      <module name="scheduled" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="server" options="-parameters" />
       <module name="swagger" options="-parameters" />

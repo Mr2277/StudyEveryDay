@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huawei.scheduled.dao.BtScheDao">
+
+    <resultMap type="com.huawei.scheduled.entity.BtSche" id="BtScheMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="nextRunTime" column="next_run_time" jdbcType="VARCHAR"/>
+        <result property="uuid" column="uuid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BtScheMap">
+        select
+          id, next_run_time, uuid
+        from mall.bt_sche
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BtScheMap">
+        select
+          id, next_run_time, uuid
+        from mall.bt_sche
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BtScheMap">
+        select
+          id, next_run_time, uuid
+        from mall.bt_sche
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="nextRunTime != null and nextRunTime != ''">
+                and next_run_time = #{nextRunTime}
+            </if>
+            <if test="uuid != null and uuid != ''">
+                and uuid = #{uuid}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into mall.bt_sche(next_run_time, uuid)
+        values (#{nextRunTime}, #{uuid})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update mall.bt_sche
+        <set>
+            <if test="nextRunTime != null and nextRunTime != ''">
+                next_run_time = #{nextRunTime},
+            </if>
+            <if test="uuid != null and uuid != ''">
+                uuid = #{uuid},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from mall.bt_sche where id = #{id}
+    </delete>
+
+    <!--通过主键修改数据-->
+    <update id="updateUuidById">
+        update mall.bt_sche
+        set uuid = #{uuid}
+        where id = #{id} and uuid is null
+    </update>
+
+    <!--查询单个-->
+    <select id="selectUuidById" resultType="java.lang.String">
+        select
+          uuid
+        from mall.bt_sche
+        where id = #{id}
+    </select>
+
+    <!--通过主键修改数据-->
+    <update id="updateSetUuidIsNull">
+        update mall.bt_sche
+        set uuid = null
+        where id = #{id}
+    </update>
+
+
+    <!--通过主键修改数据-->
+    <update id="updateSetNextRunTime">
+        update mall.bt_sche
+        set next_run_time = #{nextRunTime}
+        where id = #{id}
+    </update>
+
+
+    <!--查询单个-->
+    <select id="selectNextRunTimeById" resultType="java.lang.String">
+        select
+          next_run_time
+        from mall.bt_sche
+        where id = #{id}
+    </select>
+</mapper>
