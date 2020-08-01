@@ -14,7 +14,7 @@ public class PayProducer {
     /**
      * 端口
      */
-    private String nameServer = "192.168.1.4:9876";
+    private String nameServer = "127.0.0.1:9876";
 
 
     private DefaultMQProducer producer;

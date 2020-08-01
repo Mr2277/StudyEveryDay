@@ -18,7 +18,7 @@ public class PayConsumer {
 
     public PayConsumer() throws MQClientException {
         consumer = new DefaultMQPushConsumer(consumerGroup);
-        consumer.setNamesrvAddr("192.168.1.4:9876");
+        consumer.setNamesrvAddr("192.168.1.8:9876");
         // 设置消费地点,从最后一个进行消费(其实就是消费策略)
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_LAST_OFFSET);
         // 订阅主题的哪些标签
