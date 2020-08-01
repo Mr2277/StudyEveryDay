@@ -64,20 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/consumer/ConsumerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -195,9 +186,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596259101964" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596259833679" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer/src/main/resources/mapper" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -369,7 +360,8 @@
       <workItem from="1595740854385" duration="605000" />
       <workItem from="1595741726855" duration="14506000" />
       <workItem from="1596242822614" duration="3711000" />
-      <workItem from="1596251850889" duration="3738000" />
+      <workItem from="1596251850889" duration="4104000" />
+      <workItem from="1596259641978" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="test gitignore">
       <created>1596258923548</created>
@@ -378,16 +370,23 @@
       <option name="project" value="LOCAL" />
       <updated>1596258923549</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test gitignore .idea">
+      <created>1596259114795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596259114795</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38948000" />
+    <option name="totallyTimeSpent" value="39314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="746" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28432956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28836834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -473,7 +472,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="test gitignore" />
+    <MESSAGE value="test gitignore .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="test gitignore .idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
