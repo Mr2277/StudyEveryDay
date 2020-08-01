@@ -1,6 +1,6 @@
 # Default ignored files
 /workspace.xml
-.idea/
+.idea
 将删除 producer/src/main/resources/static/
 将删除 producer/src/main/resources/templates/
 将删除 rocketmq/target/generated-sources/
