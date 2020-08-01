@@ -31,4 +31,9 @@ public class RocketmessageController {
         return this.rocketmessageService.queryById(id);
     }
 
+    @RequestMapping("/test")
+    public void test() {
+
+    }
+
 }
