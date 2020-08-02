@@ -54,16 +54,10 @@ public class StockServiceImpl implements StockService {
         return stock;
     }
 
-    /**
-     * 修改数据
-     *
-     * @param stock 实例对象
-     * @return 实例对象
-     */
     @Override
-    public Stock update(Stock stock) {
-        this.stockDao.update(stock);
-        return this.queryById(stock.getId());
+    public int update(Integer id) {
+
+        return this.stockDao.update(id);
     }
 
     /**

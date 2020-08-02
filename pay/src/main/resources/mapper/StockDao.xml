@@ -47,11 +47,7 @@
     <!--通过主键修改数据-->
     <update id="update">
         update mall.stock
-        <set>
-            <if test="num != null">
-                num = #{num},
-            </if>
-        </set>
+        set num = num - 1
         where id = #{id}
     </update>
 

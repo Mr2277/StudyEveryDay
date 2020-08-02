@@ -6,12 +6,18 @@ import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently
 import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
 import com.alibaba.rocketmq.common.message.Message;
+import com.example.consumer.dao.RocketmessageDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
 
 @Component
 public class PayConsumer {
+
+    @Autowired
+    private RocketmessageDao rocketmessageDao;
+
     private DefaultMQPushConsumer consumer;
 
     private String consumerGroup = "pay_consumer_group";
@@ -36,6 +42,7 @@ public class PayConsumer {
                         // 标签
                         String tags = msg.getTags();
                         String keys = msg.getKeys();
+                       
                         System.out.println("topic=" + topic + ", tags=" + tags + ",keys=" + keys + ", msg=" + body);
                         return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
                     } catch (UnsupportedEncodingException e) {

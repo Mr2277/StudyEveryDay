@@ -1,15 +1,16 @@
 package com.pay.client.service;
 
-import com.pay.client.entity.Stock;
+import com.pay.client.entity.Sheet;
+
 import java.util.List;
 
 /**
- * (Stock)表服务接口
+ * (Sheet)表服务接口
  *
  * @author makejava
- * @since 2020-05-21 17:26:35
+ * @since 2020-08-02 17:34:21
  */
-public interface StockService {
+public interface SheetService {
 
     /**
      * 通过ID查询单条数据
@@ -17,7 +18,7 @@ public interface StockService {
      * @param id 主键
      * @return 实例对象
      */
-    Stock queryById(Integer id);
+    Sheet queryById(Integer id);
 
     /**
      * 查询多条数据
@@ -26,18 +27,23 @@ public interface StockService {
      * @param limit 查询条数
      * @return 对象列表
      */
-    List<Stock> queryAllByLimit(int offset, int limit);
+    List<Sheet> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param stock 实例对象
+     * @param sheet 实例对象
      * @return 实例对象
      */
-    Stock insert(Stock stock);
+    Sheet insert(Sheet sheet);
 
-
-    int update(Integer id);
+    /**
+     * 修改数据
+     *
+     * @param sheet 实例对象
+     * @return 实例对象
+     */
+    Sheet update(Sheet sheet);
 
     /**
      * 通过主键删除数据
